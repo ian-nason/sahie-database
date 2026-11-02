@@ -1,0 +1,9 @@
+[project]
+name = "sahie-database"
+version = "0.1.0"
+description = "Census SAHIE 2024 state and county health insurance estimates in DuckDB"
+requires-python = ">=3.10"
+dependencies = ["duckdb==1.5.5", "datapond-build"]
+
+[tool.uv.sources]
+datapond-build = { git = "https://github.com/datapond-db/datapond-build", rev = "ba9f7198a0aff3b604953b5f7bd612d15ef1755e" }

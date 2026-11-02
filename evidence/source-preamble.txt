@@ -1,0 +1,84 @@
+Filename:  sahie_2024.csv
+Created:   23JUN26  10:11
+Description:
+
+  Model-based Small Area Health Insurance Estimates (SAHIE) for Counties and States, 2024
+  Source: U.S. Census Bureau, Small Area Health Insurance Estimates (SAHIE) Program, August 2026, Project No. P-6000007 / Approval CBDRB-FY26-0241
+
+  NOTE: VERY LONG .CSV FILES NOT ALWAYS IMPORTED INTO EXCEL CORRECTLY - CHECK FOR TRUNCATION
+
+File Layout and Definitions:
+
+    Variable      Format      Description
+       year            4      Year of Estimate
+       version         8      Release Version
+                                 Blank   : YEAR other than 2013, Only Version
+                                 Original: 2013 only, Original Version
+                                 Updated : 2013 only, Updated Version (May 2016)
+       statefips       2      Unique FIPS code for each state
+       countyfips      3      Unique FIPS code for each county within a state
+       geocat          2      Geography category
+                                40 - State geographic identifier
+                                50 - County geographic identifier
+       agecat          1      Age category
+                                0 - Under 65 years
+                                1 - 18 to 64 years
+                                2 - 40 to 64 years
+                                3 - 50 to 64 years
+                                4 - Under 19 years
+                                5 - 21 to 64 years
+                                6 - 21 to 29 years
+       racecat         1      Race category
+                                0 - All races
+                                Only state estimates have racecat=1,2,3,4,5,6,7 values
+                                1 - White alone, not Hispanic or Latino
+                                2 - Black or African American alone, not Hispanic
+                                3 - Hispanic or Latino (any race)
+                                4 - American Indian and Alaska Native alone, not Hispanic or Latino
+                                5 - Asian alone, not Hispanic or Latino
+                                6 - Native Hawaiian and Other Pacific Islander alone, not Hispanic or Latino
+                                7 - Two or More Races, not Hispanic or Latino
+       sexcat          1      Sex category
+                                0 - Both sexes
+                                1 - Male
+                                2 - Female
+       iprcat          1      Income category
+                                0 - All income levels
+                                1 - At or below 200% of poverty
+                                2 - At or below 250% of poverty
+                                3 - At or below 138% of poverty
+                                4 - At or below 400% of poverty
+                                5 - Between 138% - 400%  of poverty
+      NIPR             8      Number in demographic group for <income category>
+         nipr_moe      8           MOE  for NIPR
+      NUI              8      Number uninsured
+         nui_moe       8           MOE  for NUI
+      NIC              8      Number insured
+         nic_moe       8           MOE  for NIC
+      PCTUI            5.1    Percent uninsured in demographic group for <income category>
+         pctui_moe     5.1         MOE  for PCTUI
+      PCTIC            5.1    Percent insured in demographic group for <income category>
+         pctic_moe     5.1         MOE  for PCTIC
+      PCTELIG          5.1    Percent uninsured in demographic group for all income levels
+         pctelig_moe   5.1         MOE  for PCTELIG
+      PCTLIIC          5.1    Percent insured in demographic group for all income levels
+         pctliic_moe   5.1         MOE  for PCTLIIC
+      state_name       70     State Name
+      county_name      70     County Name
+
+  PRIMARY KEY: year version statefips countyfips agecat racecat sexcat iprcat
+
+  Note 1:  A margin of error (MOE) is the difference between an estimate and its upper
+  or lower confidence bounds. Confidence bounds can be created by adding the margin
+  of error to the estimate (for an upper bound) and subtracting the margin of error
+  from the estimate (for a lower bound). All published margins of error for the Small
+  Area Health Insurance Estimates program are based on a 90 percent confidence level.
+
+  Note 2:  The number in a demographic group is the number of people in the poverty
+  universe in that age, sex, and race/Hispanic origin group.
+
+  Note 3:  Values for Kalawao, HI (15-005) should be considered N/A or missing.
+
+  Note 4:  MOEs of zero should be assumed to be <1 for counts and <0.1 for percentages.
+
+  General Note:  Details may not sum to totals because of rounding.

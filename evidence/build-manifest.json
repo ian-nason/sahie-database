@@ -1,0 +1,161 @@
+{
+  "built_utc": "2026-11-02T21:59:36.128890+00:00",
+  "source": {
+    "url": "https://www2.census.gov/programs-surveys/sahie/datasets/time-series/estimates-acs/sahie-2024-csv.zip",
+    "bytes": 13653790,
+    "sha256": "5ec0a0cc5cb2e4e17cf046d9f68508decfdb4d9bbb982781d94bbf56ce50347a",
+    "retrieved_utc": "2026-11-02T20:44:22.582558+00:00",
+    "headers": {
+      "Content-Length": "13653790",
+      "Last-Modified": "Thu, 06 Aug 2026 13:02:36 GMT"
+    },
+    "members": [
+      {
+        "name": "sahie_2024.csv",
+        "bytes": 111577185,
+        "crc32": 1525910511
+      }
+    ]
+  },
+  "source_rows": 402786,
+  "sample": false,
+  "tables": {
+    "estimates": 402786,
+    "geographies": 3195,
+    "category_codes": 26
+  },
+  "null_counts": {
+    "nipr": 114,
+    "nipr_moe": 114,
+    "nui": 114,
+    "nui_moe": 114,
+    "nic": 114,
+    "nic_moe": 114,
+    "pctui": 132,
+    "pctui_moe": 132,
+    "pctic": 132,
+    "pctic_moe": 132,
+    "pctelig": 120,
+    "pctelig_moe": 120,
+    "pctliic": 120,
+    "pctliic_moe": 120
+  },
+  "checks": {
+    "source_row_count": {
+      "actual": 402786,
+      "expected": 402786,
+      "passed": true
+    },
+    "unique_keys": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "nonmissing_keys": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "geography_consistency": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "under19_categories": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "count_identity": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "measure_moe_missingness": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "count_missingness": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "percent_pair_missingness": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "percentage_complement": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "percentage_range": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "nonnegative_counts": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "geography_unique": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "all_income_percentages": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "eligible_vs_within_income": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "all_income_denominator": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    "complete_2024_rows": {
+      "actual": 402786,
+      "expected": 402786,
+      "passed": true
+    },
+    "states": {
+      "actual": 51,
+      "expected": 51,
+      "passed": true
+    },
+    "counties": {
+      "actual": 3144,
+      "expected": 3144,
+      "passed": true
+    },
+    "county_view_grain": {
+      "actual": 3144,
+      "expected": 3144,
+      "passed": true
+    },
+    "kalawao_missing": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    }
+  },
+  "output": "sahie.duckdb",
+  "bytes": 14168064,
+  "sha256": "fbed7d134bfbcbf7f26e8edbf01899ea5a354d65f09e4dcd85b704f8046ba307",
+  "duckdb": "1.5.5",
+  "config": {
+    "memory_limit": "256MiB",
+    "threads": "1",
+    "max_temp_directory_size": "0B",
+    "preserve_insertion_order": "true"
+  },
+  "elapsed_seconds": 9.488
+}

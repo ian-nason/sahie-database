@@ -1,0 +1,62 @@
+{
+  "source_code_sha256": {
+    "build_database.py": "a6877f818d1f6edbff89d658a8990906589577c6039b4be0b5d64e65bc4ca4f3",
+    "test_build.py": "9ce9b3458df0f0d8209342f37cae00147923c2877b30abbdbcce03d0be0599cd",
+    "run_smoke.py": "33d107639eea09e899131cba8cff0b9d82548d18ae018177d6e2ca875cbbfeab",
+    "smoke_python.py": "5af9dd79669f01b7a90b6d72057cd3b44f26e9b5d30be7a034cd0853ed36bd3f",
+    "smoke_r.R": "57c44247dffb9b603d51faa1e85a4acc467f586eb817d4e2504b66693f9b63bc",
+    "prepare_release.py": "2391a7c9981eaf960db4c8b8758207e38ab598c27df1f43e02a69e27ee47d341",
+    "pyproject.toml": "6c4eed9e1618ab05af871380dc5595e8caad58ab41a876d0f8c67bd0c8905e9d",
+    "card.yaml": "ab290833a4054f159aecfaca27372a2fcb0d050b952f1d6fc9f97b602362bf91"
+  },
+  "unit_tests": 14,
+  "unit_tests_passed": true,
+  "full_data_checks": 21,
+  "full_data_checks_passed": true,
+  "source_rows": 402786,
+  "tables": {
+    "estimates": 402786,
+    "geographies": 3195,
+    "category_codes": 26
+  },
+  "null_counts": {
+    "nipr": 114,
+    "nipr_moe": 114,
+    "nui": 114,
+    "nui_moe": 114,
+    "nic": 114,
+    "nic_moe": 114,
+    "pctui": 132,
+    "pctui_moe": 132,
+    "pctic": 132,
+    "pctic_moe": 132,
+    "pctelig": 120,
+    "pctelig_moe": 120,
+    "pctliic": 120,
+    "pctliic_moe": 120
+  },
+  "artifact_sha256": "fbed7d134bfbcbf7f26e8edbf01899ea5a354d65f09e4dcd85b704f8046ba307",
+  "artifact_bytes": 14168064,
+  "clients": {
+    "python": {
+      "datapond": "0.1.5",
+      "duckdb": "1.5.6",
+      "http_range_smoke_passed": true,
+      "leading_zero_fips_and_decimal_assertions_passed": true
+    },
+    "r": {
+      "datapond": "0.1.0",
+      "duckdb": "1.5.5",
+      "R": "4.5.3",
+      "http_range_smoke_passed": true,
+      "leading_zero_fips_and_numeric_assertions_passed": true
+    }
+  },
+  "checked_utc": "2026-11-02T22:20:01.193441+00:00",
+  "review_gate": "Publish only after independent audit clearance and explicit new-dataset publication authorization",
+  "direct_readme_examples": {
+    "python": "passed against exact artifact over loopback HTTP",
+    "r": "passed against exact artifact over loopback HTTP",
+    "public_verification": "Required after upload; not yet claimed"
+  }
+}

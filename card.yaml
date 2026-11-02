@@ -1,0 +1,25 @@
+# Proposed destination; no repository or dataset has been published by this task.
+repo: Nason/sahie-database
+file: sahie.duckdb
+pretty_name: Census Small Area Health Insurance Estimates (SAHIE), 2024
+title: County and State Health Insurance Estimates
+license: other
+tags: [health-insurance, census, sahie, counties, poverty, health-economics, duckdb, datapond]
+size_category: 100K<n<1M
+alias: sahie
+table_columns: [description, row_count, column_count]
+intro: |
+  The Census Bureau's August 2026 release of model-based 2024 health-insurance
+  estimates: 402,786 records for 51 states/DC and 3,144 counties, split by
+  overlapping age, income and available race/sex categories. Published counts,
+  percentages and 90% margins of error are retained. FIPS strings retain leading
+  zeros and source missing values remain NULL. The county_uninsured view selects
+  one under-65, all-income, all-race, both-sex estimate per county.
+quick_start_sql: |
+  SELECT fips, county_name, pctui, pctui_moe
+  FROM sahie.county_uninsured WHERE statefips = '36' ORDER BY fips LIMIT 3;
+footer: |
+  Source: https://www.census.gov/data/datasets/time-series/demo/sahie/estimates-acs.html
+  Census Bureau work: U.S. public domain; no worldwide CC0 assertion.
+  Do not sum overlapping age/income categories or interpret model estimates as causal effects.
+  2024 only; see FIELD-GUIDE.md, DICTIONARY.md and source-lock.json.

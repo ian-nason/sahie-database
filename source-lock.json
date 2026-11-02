@@ -1,0 +1,17 @@
+{
+  "url": "https://www2.census.gov/programs-surveys/sahie/datasets/time-series/estimates-acs/sahie-2024-csv.zip",
+  "bytes": 13653790,
+  "sha256": "5ec0a0cc5cb2e4e17cf046d9f68508decfdb4d9bbb982781d94bbf56ce50347a",
+  "retrieved_utc": "2026-11-02T20:44:22.582558+00:00",
+  "headers": {
+    "Content-Length": "13653790",
+    "Last-Modified": "Thu, 06 Aug 2026 13:02:36 GMT"
+  },
+  "members": [
+    {
+      "name": "sahie_2024.csv",
+      "bytes": 111577185,
+      "crc32": 1525910511
+    }
+  ]
+}
